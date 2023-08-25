@@ -152,7 +152,7 @@ main h1 {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2%;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .intro {
@@ -405,6 +405,7 @@ main h1 {
 .enter-button {
     width: 150px;
     background-color: #1F5F5B;
+    font-weight: 600;
     color: aliceblue;
     text-align: center;
     font-size: 16px;
@@ -428,7 +429,7 @@ main h1 {
     width: 100px;
     margin: auto;
     text-align: center;
-    color:#1b203d;
+    color:#000;
     margin-bottom: 10px;
     margin-top: 50px;
     font-size: 14px;
@@ -440,7 +441,6 @@ main h1 {
 
   .backtotop:hover {
     color: #159947;
-    text-shadow: 1px 1px 2px #062315;
     
   }
 
