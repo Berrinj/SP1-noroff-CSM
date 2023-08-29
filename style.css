@@ -17,6 +17,7 @@ nav {
     height: 80px;
     background-color: #1F5F5B;
     font-family: "Trebuchet MS", "Open sans";
+    padding-right: 20px;
     /*background-color: #3a5171;*/
     
 }
@@ -50,10 +51,10 @@ nav ul {
     display: flex;
     width: 700px;
     justify-content: space-between;
-    margin: 0 40px 0 0; 
+    margin: 0; 
     padding: 0;
     order: 3;
-    gap: 10%;
+    gap: 5%;
 }
 
 nav li {
@@ -75,6 +76,12 @@ nav a {
     height: 80px;
     line-height: 80px;
 }
+
+.hamburger-menu {
+    display: none;
+    order: 4;
+}
+
 
 .opening-hours {
     display: flex;
@@ -133,7 +140,7 @@ header {
 
 
 .ticket-button {
-    width: 300px;
+    max-width: 300px;
     background-color: #159947;
     color: aliceblue;
     text-align: center;
@@ -1028,6 +1035,10 @@ footer {
         width: 400px;
         text-align: center;
       }
+
+      .fcenter p {
+        margin: 0;
+      }
       
       .fright {
         text-align: right;
@@ -1112,7 +1123,7 @@ footer {
         }
 
     
-        .fright, .fleft{
+        .fright {
             width: 100vw;
             background-color: #06373A;
             text-align: center;
@@ -1130,11 +1141,22 @@ footer {
             padding: 0;
         }
 
+        .fcenter {
+            width: auto;
+            padding: 20px;
+            order: 3;
+        }
+
       }
 
       @media screen and (min-width: 0px) and (max-width: 582px) {
 
         .opening-hours {
+            display: block;
+            width: auto;
+        }
+
+        .hamburger-menu {
             display: block;
         }
 
