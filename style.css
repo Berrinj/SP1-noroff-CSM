@@ -82,7 +82,7 @@ nav a {
 }
 
 .hamburger-menu, 
-#menu-checkbox {
+#menu-checkbox, .fas.fa-bars {
     display: none;
 }
 
@@ -1084,13 +1084,14 @@ footer {
       .fleft {
         width: 200px;
         padding-left: 10%;
+        display: flex;
+        flex-direction: column;
       }
 
       .fleft img{
         width: 170px;
         height: 92px;
         object-fit: cover;
-        float: left;
         margin-top: 10px;
         margin-bottom: 10px;
         
@@ -1111,9 +1112,7 @@ footer {
       }
       
       .fright {
-        width: 200px;
         text-align: right;
-        float: right;
         line-height: 26px;
         padding-right: 10%;
       }
@@ -1237,7 +1236,9 @@ footer {
             font-size: 16px;
         }
         .fleft img {
-            float: none;
+            width: 250px;
+            height: 150px;
+            align-self: center;
         }
 
         .fleft {
@@ -1267,8 +1268,8 @@ footer {
         
         .fas.fa-bars {
             position: absolute;
-            right: 10px;
-            top: 15px;
+            right: 12px;
+            top: 17px;
             color: #Fff;
             display: block;
         }
@@ -1278,10 +1279,13 @@ footer {
             gap: 10px;
             flex-direction: column;
             align-items: center;
+            margin-right: 45px;
+            margin-left: 0;
         }
 
         .opening-hours p {
             margin: 0;
+            font-size: 0.7rem;
         }
 
         header {
