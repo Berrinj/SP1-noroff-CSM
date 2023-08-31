@@ -81,11 +81,39 @@ nav a {
     line-height: 80px;
 }
 
-.hamburger-menu {
+.hamburger-menu, 
+#menu-checkbox {
     display: none;
-    order: 4;
 }
 
+  .hamburger-menu {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    top: 80px;
+    z-index: 2000;
+    background-color: #1F5F5B;
+    box-shadow: 0 4px 2px 1px #6662625e;
+  }
+  .hamburger-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    line-height: normal;
+    height: 30px;
+    align-self: center;
+  }
+
+  .hamburger-menu li {
+    height: 30px;
+    padding: 10px;
+  }
+
+  #menu-checkbox:checked~.hamburger-menu {
+    display: block;
+  }
 
 .opening-hours {
     display: flex;
@@ -1236,6 +1264,15 @@ footer {
 
       @media screen and (min-width: 0px) and (max-width: 582px) {
 
+        
+        .fas.fa-bars {
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            color: #Fff;
+            display: block;
+        }
+
         .opening-hours {
             display: flex;
             gap: 10px;
@@ -1245,10 +1282,6 @@ footer {
 
         .opening-hours p {
             margin: 0;
-        }
-
-        .hamburger-menu {
-            display: block;
         }
 
         header {
