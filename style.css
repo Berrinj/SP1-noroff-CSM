@@ -13,28 +13,32 @@ body {
     color: inherit;
   }
 
+  body ul {
+    padding: 0;
+  }
+
 nav {
     height: 80px;
     background-color: #1F5F5B;
     font-family: "Trebuchet MS", "Open sans";
-    padding-right: 20px;
     /*background-color: #3a5171;*/
     
 }
 
+
 .nav-content {
-    max-width: 3000px;
-    margin: auto;
+    max-width: 2000px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
+    padding: 0 20px 0 20px;
 }
 nav img {
     order: 1;
     height: 80px;
     width: 320px;
     object-fit: contain;
-    margin-left: 20px;
 }
 
 .logo-mobile {
@@ -51,7 +55,7 @@ nav ul {
     display: flex;
     width: 700px;
     justify-content: space-between;
-    margin: 0; 
+    margin: 0 0 0 10px; 
     padding: 0;
     order: 3;
     gap: 5%;
@@ -85,8 +89,7 @@ nav a {
 
 .opening-hours {
     display: flex;
-    justify-content: flex-start;
-    /*flex-direction: column; add in media query*/
+    justify-content: center;
     width: 300px;
     order: 2;
     font-size: 14px;
@@ -114,9 +117,7 @@ nav a {
     font-style: italic;
   }
 
-/* INDEX.HTML */
-
-header {
+  header {
     height: 420px;
     position: relative;
     background-color: #000;
@@ -168,11 +169,18 @@ main {
     border-right: 1px solid black;
     border-left: 1px solid black;
     background-image: url(img/main-background-img.jpg);
+    background-position: center top;
 }
 
 main h1 {
     text-align: center;  
 }
+
+.main-content {
+    padding-left: 7%;
+    padding-right: 7%;
+    
+} 
 
 .introduction h3 {
     padding-left: 5%;
@@ -193,6 +201,10 @@ h4.intro {
     margin-bottom: 30px;
     font-weight: 600;
 }
+
+/* INDEX.HTML */
+
+
 
 .introlongtext {
     display: flex;
@@ -217,21 +229,18 @@ h4.intro {
     margin: 0;
 }
 
-.main-content {
-    padding-left: 7%;
-    padding-right: 7%;
-    
-} 
-
 .section-headings {
     font-size: 24px;
     margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    max-width: fit-content;
 }
 
 .exhibition-containers {
    max-width: 1101px;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    gap: 20px;
    flex-wrap: wrap;
    margin: 0 auto;
@@ -427,7 +436,8 @@ h4.intro {
 .explore-containers {
     max-width: 1101px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -453,8 +463,9 @@ h4.intro {
 .exhibitions-grid {
     background-color: rgba(255,255,255, 0.8);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50px 140px 140px;
+    height: auto;
+    grid-template-columns: minmax(245px, auto);
+    grid-template-rows: 50px minmax(140px, auto) 140px;
     gap: 10px;
     margin-top: 30px;
     border-radius: 6px 6px 0 0;
@@ -473,26 +484,29 @@ h4.intro {
 .exhibitions-grid h2 {
     grid-column: 2 / 5;
     grid-row: 1;
-    margin-top: 10px;
+    margin: 0;
     letter-spacing: 10px;
     text-align: center;
+    align-self: center;
     width: 100%;
 }
 
 .exhibitions-grid .p-one {
     grid-column: 2 / 5;
     grid-row: 2;
-    padding-right: 15px;
+    padding: 0 15px 15px 15px;
     line-height: 25px;
-    margin-top: 0;
+    margin: 0;
+    align-self: center;
 }
 
 .exhibitions-grid .p-two {
     grid-column: 2 / 5;
     grid-row: 3;
-    padding-right: 15px;
+    padding: 15px;
     line-height: 25px;
-    margin-top: 0;
+    margin: 0;
+    align-self: center;
 }
 
 .enter-button {
@@ -524,8 +538,8 @@ h4.intro {
     margin: auto;
     text-align: center;
     color:#000;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     font-size: 14px;
   }
   
@@ -541,14 +555,47 @@ h4.intro {
 
   /*    EXPLORE PAGE    */
 
-  .explore-grid {
+
+  .explore-page-container {
+    max-width: 1000px;
+    min-height: 285px;
+    background-color: rgba(255,255,255, 0.8);
+    margin: auto;
+    box-shadow: 0 8px 6px -6px grey;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .explore-page-container img {
+    width: 100%;
+    min-width: 350px;
+    height: 285px;
+    float: left;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 6px 0 0 0;
+  }
+  .explore-page-container h3 {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  .explore-page-container p {
+    padding: 0 20px 20px 20px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  /*.explore-grid {
     background-color: rgba(255,255,255, 0.8);
     display: grid;
     grid-template-columns: 214px 214px 624px;
     grid-template-rows: 50px 50px 160px 125px 125px;
     gap: 0px;
     margin-top: 30px;
-    /*border: 1px solid black;*/
+    /*border: 1px solid black;
     box-shadow: 0 8px 6px -6px black;
     border-radius: 6px 6px 0 0;
   }
@@ -627,7 +674,7 @@ h4.intro {
 
   p.exp-p-three {
     margin-top: 0;
-  }
+  }*/
 
 
   /*     INFO PAGE     */
@@ -689,11 +736,11 @@ h4.intro {
   }
 
   .days {
-    margin-left: 25px;
+    margin-left: 20px;
   }
 
   .time {
-    margin-right: 25px;
+    margin-right: 20px;
   }
 
   .accessibility-img {
@@ -711,6 +758,7 @@ h4.intro {
     border-radius: 6px;
     max-width: 800px;
     margin: auto;
+    padding: 10px;
 }
 
 .contact-main h2 {
@@ -724,6 +772,7 @@ h4.intro {
     background-color: #1F5F5B;
     color: #fff;
     padding: 50px;
+    border-radius: 6px;
 }
 
 .phone-email p {
@@ -813,11 +862,13 @@ fieldset {
 
   .get-involved-main h3 {
     padding-top: 10px;
+    padding-left: 20px;
   }
 
   .get-involved-main p {
-    padding-right: 20px;
+    padding: 0 20px 20px 20px;
     line-height: 25px;
+    margin: 0;
   }
 
 
@@ -902,7 +953,7 @@ fieldset {
 
  .ticket-main {
     max-width: 1000px;
-    min-height: 450px;
+    min-height: 400px;
     margin: auto;
     background-color: rgba(255,255,255, 0.8);
     display: flex;
@@ -916,7 +967,7 @@ fieldset {
 
  .ticket-main img {
     max-width: 370px;
-    padding-left: 20px;
+    padding: 0 20px;
  }
 
  .choose-day, .choose-tickets {
@@ -924,9 +975,6 @@ fieldset {
     position: relative;
  }
 
-.choose-tickets p {
-    padding-left: 10px;
-}
 
 .kids-youth, .adults, .groups {
     display: flex;
@@ -939,14 +987,12 @@ fieldset {
     color: aliceblue;
     text-align: center;
     font-size: 18px;
-    margin: auto;
-    margin-top: 0px;
+    margin: 30px auto;
+    margin-top: 30px;
     border-radius: 6px;
     padding: 15px;
     box-shadow: 0 8px 6px -6px black;
-    position:absolute;
-    bottom: 20px;
-    right: 20px;
+    
 }
 /* FOOTER */
 
@@ -971,11 +1017,11 @@ footer {
         justify-content: space-between;
         align-items: center;
         color: #fff;
-        width: 70%;
+        width: 100%;
         padding: 0;
         margin: 0;
         position: relative;
-        max-width: 3000px;
+        max-width: 1500px;
         margin: auto;
       }
       footer li {
@@ -985,7 +1031,7 @@ footer {
       
       footer p {
         margin-bottom: 5px;
-        font-size: 14px;
+        font-size: 16px;
       }
       
       footer .fcenter img {
@@ -1008,7 +1054,8 @@ footer {
 
       
       .fleft {
-        width: 300px;
+        width: 200px;
+        padding-left: 10%;
       }
 
       .fleft img{
@@ -1026,13 +1073,8 @@ footer {
         text-align: left;
         padding: 0;
       }
-
-      .address {
-        font-size: 14px;
-      }
       
       .fcenter {
-        width: 400px;
         text-align: center;
       }
 
@@ -1041,15 +1083,15 @@ footer {
       }
       
       .fright {
+        width: 200px;
         text-align: right;
         float: right;
-        width: 300px;
         line-height: 26px;
+        padding-right: 10%;
       }
       
       .fright a {
         color: inherit;
-        font-size: 14px;
       }
       
       .fright li:hover {
@@ -1062,12 +1104,9 @@ footer {
 
 
       @media screen and (max-width: 1188px) {
-        .exhibition-containers {
-            justify-content: center;
-        }
 
         .section-headings {
-            text-align: center;
+            margin: 20px auto;
         }
 
         .explore-containers {
@@ -1083,7 +1122,7 @@ footer {
         }
       }
  
-      @media screen and (min-width: 0px) and (max-width: 889px) {
+      @media screen and (min-width: 0px) and (max-width: 925px) {
         
         .logo-desktop {
             display: none;
@@ -1115,6 +1154,46 @@ footer {
         .vertical-line {
             display: none;
         }
+        .exhibitions-grid  {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .exhibitions-grid img {
+            width: 100%;
+        }
+
+        .ticket-main {
+            flex-direction: column;
+        }
+
+        .choose-day {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    
+
+        .choose-tickets {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .get-involved-main {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .get-involved-main img {
+            max-width: 100%;
+            min-width: 240px;
+            margin: 0;
+            
+        }
+
+
+
         footer {
             height: auto;
         }
@@ -1123,23 +1202,28 @@ footer {
             flex-direction: column;
         }
 
-    
         .fright {
             width: 100vw;
             background-color: #1F5F5B;
             text-align: center;
+            font-size: 16px;
         }
         .fleft img {
             float: none;
         }
 
+        .fleft {
+            padding: 0 0 10px 0;
+            
+        }
         .fleft p {
             text-align: center;
             width: auto;
         }
 
-        .fright ul {
+        .fright {
             padding: 0;
+            text-align: center;
         }
 
         .fcenter {
@@ -1155,6 +1239,12 @@ footer {
         .opening-hours {
             display: flex;
             gap: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .opening-hours p {
+            margin: 0;
         }
 
         .hamburger-menu {
@@ -1168,9 +1258,13 @@ footer {
         nav ul {
             display: none;
         }
+
+        .ticket-button {
+            max-width: 200px;
+        }
        
         .ex-con1 img {
-            width: 300px;
+            max-width: 300px;
             height: 200px;
         }
         .ex-con2 img {
@@ -1196,11 +1290,54 @@ footer {
             width: 300px;
             height: 200px;
         }
-
       
-    
+        .exhibitions-grid h2 {
+            font-size: 20px;
+        }
+        .reserve-button {
+            width: 170px;
+        }
       }
-      
+
+
+      /*   DO I NEED LESS THEN 360PX??     */
+
+
+      @media screen and (min-width: 0px) and (max-width: 328px) {
+      header img {
+        width: 250px;
+    }
+
+    .opening-hours {
+        display: none;
+    }
+
+    img.smallest-screen {
+        width: 277px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+.see-all-button {
+    width: 200px;
+}
+
+.schedule p{
+    font-size: 14px;
+}
+ .time, .days {
+    margin-right: 10px;
+    margin-left: 10px;
+ }
+
+ .exhibitions-grid h2 {
+    letter-spacing: 0;
+}
+
+.enter-button {
+    margin: auto;
+}
+}
 /* Header img: Photo by Romain Tordo on Unsplash
 background opacity https://stackoverflow.com/
 CSS grids MDN
