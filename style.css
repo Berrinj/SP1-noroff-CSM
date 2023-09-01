@@ -3,7 +3,8 @@ body {
     padding: 0;
     height: 100%;
     background-color: #1F5F5B;
-    background-color: #fff;
+    background-color: #000;
+    /*background-color: #fff;*/
     font-family: "Open sans", "Trebuchet MS", sans-serif;
   }
 
@@ -24,7 +25,6 @@ nav {
     /*background-color: #3a5171;*/
     
 }
-
 
 .nav-content {
     max-width: 2000px;
@@ -165,8 +165,14 @@ nav a {
     margin: 0 auto;
     
 }
+/*   ALL BUTTONS    */
 
+/*   all button a styling    */
+.ticket-button a, .see-all-button a, .enter-button a, .back-to-exhibitions-button a {
+    display: block;
+}
 
+/* Book tickets button, on most pages  */
 .ticket-button {
     max-width: 300px;
     background-color: #159947;
@@ -179,14 +185,67 @@ nav a {
     padding: 20px;
     box-shadow: 0 8px 6px -6px black;
 }
-
-.ticket-button a {
-    display: block;
-}
-
 .ticket-button:hover {
     background-color: #1cbd59;
 }
+
+/*   index.html: See all exhibitions button    */
+.see-all-button {
+    width: 250px;
+    background-color: #49B265;
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 8px 6px -6px black;
+}
+.see-all-button:hover {
+    background-color: #3e9956;
+}
+
+/*   exhibitions.html: Enter exhibition     */
+.enter-button {
+    width: 150px;
+    background-color: #1F5F5B;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: auto; 
+    margin-right: 0;
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+    box-shadow: 0 8px 6px -6px black;
+}
+.enter-button:hover {
+    background-color: #297A75;
+}
+
+/*   Paleontolohy.html: back to exhibitions button   */
+.back-to-exhibitions-button {
+    width: 150px;
+    background-color: #1F5F5B;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+    margin-top: -30px;
+    box-shadow: 0 8px 6px -6px black;
+  }
+.back-to-exhibitions-button:hover {
+    background-color: #246d68;
+  }
+
+
+
+/*    MAIN   */
 
 main {
     max-width: 1224px;
@@ -238,11 +297,14 @@ h4.intro {
     justify-content: center;
 }
 
-.intro2 {
-    text-align: right;
+.intro2, .intro3 { 
     padding: 0 20px 0 20px;
     max-width: 450px;
     margin: 0;
+}
+
+.intro2 {
+    text-align: right;
 }
 
 .vertical-line {
@@ -250,77 +312,38 @@ h4.intro {
     border-left: 1px solid black;
 }
 
-.intro3 {
-    padding: 0 20px 0 20px;
-    max-width: 450px;
-    margin: 0;
-}
-
 .section-headings {
     font-size: 24px;
+    text-align: center;
     margin-top: 50px;
     margin-bottom: 20px;
-    border-bottom: 1px solid black;
-    max-width: fit-content;
+    max-width: 100%;
+    background-color: rgba(6,55,58, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
 }
 
 .exhibition-containers {
    max-width: 1101px;
    display: flex;
    justify-content: space-around;
-   gap: 20px;
+   gap: 10px;
    flex-wrap: wrap;
    margin: 0 auto;
 }
 
-/*.ex-con1 .ex-con2 .ex-con3 .ex-con4 {
-    position: relative;
-    max-width: 500px;
-    margin: 0 auto;
-}*/
-
-/*.ex-con1 .ex-con2 .ex-con3 .ex-con4, img {
+.exh-con img, .exp-con img {
     width: 500px;
     height: 294px;
     vertical-align: middle;
     object-fit: cover;
     border-radius: 6px 6px 0 0;
-}*/
-
-.ex-con1 img {
-    max-width: 500px;
-    height: 294px;
-    vertical-align: middle;
-    object-fit: cover;
-    border-radius: 6px 6px 0 0;
 }
 
-.ex-con2 img {
-    max-width: 500px;
-    height: 294px;
-    vertical-align: middle;
-    object-fit: cover;
-    border-radius: 6px 6px 0 0;
+.exh-con:hover, .exp-con:hover {
+    opacity: 90%;
 }
-
-.ex-con3 img {
-    max-width: 500px;
-    min-width: 500px;
-    height: 294px;
-    vertical-align: middle;
-    object-fit: cover;
-    border-radius: 6px 6px 0 0;
-}
-
-.ex-con4 img {
-    max-width: 500px;
-    height: 294px;
-    vertical-align: middle;
-    object-fit: cover;
-    border-radius: 6px 6px 0 0;
-}
-
-
 
 .ex-label {
     background-color: #06373A;
@@ -333,43 +356,19 @@ h4.intro {
     box-shadow: 0 8px 6px -6px grey;
 }
 
-
-.see-all-button {
-    width: 250px;
-    background-color: #49B265;
-    color: aliceblue;
-    text-align: center;
-    font-size: 18px;
-    margin: auto;
-    margin-top: 0px;
-    border-radius: 6px;
-    padding: 15px;
-    box-shadow: 0 8px 6px -6px black;
-}
-
-.see-all-button:hover {
-    background-color: #06373A;
-}
-
-.see-all-button a {
-    color: inherit;
-    display: block;
-}
-
 .informational-containers {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 5%;
-    padding-left: 5%;
-    margin-top: 50px;
+    gap: 10px;
+    padding-right: 1%;
+    padding-left: 1%;
 }
 
 .informational-containers h4 {
     text-align: center;
-    background-color: #1F5F5B;
+    background-color: #06373A;
     color: white;
     padding: 10px;
     margin: 0 0 10px 0;
@@ -378,7 +377,7 @@ h4.intro {
 
 
 .program-container, .openinghours-container, .info-container {
-    min-height: 410px;
+    height: auto;
     width: 250px;
     box-shadow: 0 8px 6px -1px grey;
     background-color: #F0ECEC;
@@ -444,7 +443,6 @@ h4.intro {
     margin: 0;
     padding: 0px 10px 0px 10px;
     font-size: 16px;
-    text-decoration: underline;
     text-align: center;
 }
 
@@ -536,30 +534,6 @@ h4.intro {
     align-self: center;
 }
 
-.enter-button {
-    width: 150px;
-    background-color: #1F5F5B;
-    font-weight: 600;
-    color: aliceblue;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 0;
-    margin-left: auto; 
-    margin-right: 0;
-    border-radius: 0 0 6px 6px;
-    padding: 10px;
-    box-shadow: 0 8px 6px -6px black;
-}
-
-.enter-button a {
-    color: inherit;
-    display: block;
-}
-
-.enter-button:hover {
-    background-color: #297A75;
-}
-
 .backtotop {
     width: 100px;
     margin: auto;
@@ -597,16 +571,17 @@ h4.intro {
 
   .explore-page-container img {
     width: 100%;
-    min-width: 350px;
+    min-width: 250px;
     height: 285px;
     float: left;
-    margin-right: 15px;
     object-fit: cover;
+    object-position: 0 50%;
     border-radius: 6px 0 0 0;
   }
   .explore-page-container h3 {
     padding-top: 10px;
     padding-left: 20px;
+    font-size: 1.7rem;
   }
 
   .explore-page-container p {
@@ -760,7 +735,6 @@ h4.intro {
   .schedule {
     display: flex;
     justify-content: space-around;
-    padding-top: 10px;
   }
 
   .days {
@@ -770,6 +744,10 @@ h4.intro {
   .time {
     margin-right: 20px;
   }
+
+  .days p:first-child, .time p:first-child {
+    margin-top: 0;
+}
 
   .accessibility-img {
     height: 200px;
@@ -923,6 +901,7 @@ fieldset {
     padding: 20px;
     align-self: center;
     line-height: 25px;
+    margin: 0;
   }
 
   .pal-con-2 {
@@ -948,26 +927,8 @@ fieldset {
     align-self: center;
     line-height: 25px;
     text-align: right;
+    margin: 0;
   }
-
-  .back-to-exhibitions-button {
-    width: 150px;
-    background-color: #1F5F5B;
-    font-weight: 600;
-    color: aliceblue;
-    text-align: center;
-    font-size: 16px;
-    margin: auto;
-    border-radius: 0 0 6px 6px;
-    padding: 10px;
-    margin-top: -30px;
-    box-shadow: 0 8px 6px -6px black;
-  }
-
-  .back-to-exhibitions-button a {
-    display: block;
-  }
-
 
 
   /*            TICKET PAGE            */
@@ -1140,6 +1101,9 @@ footer {
         .explore-containers {
             justify-content: center;
         }
+        .excon1 img {
+            width:auto;
+        }
 
         .opening-hours {
             display: none;
@@ -1187,6 +1151,11 @@ footer {
         }
         .vertical-line {
             display: none;
+        }
+
+        .informational-containers {
+            justify-content: center;
+            gap: 30px;
         }
         .exhibitions-grid  {
             display: flex;
@@ -1319,11 +1288,11 @@ footer {
             max-width: 200px;
         }
        
-        .ex-con1 img {
+        .exh-con img {
             max-width: 300px;
             height: 200px;
         }
-        .ex-con2 img {
+        /*.ex-con2 img {
             width: 300px;
             height: 200px;
         }
@@ -1335,7 +1304,7 @@ footer {
         .ex-con4 img {
             width: 300px;
             height: 200px;
-        }
+        }*/
 
         .explore-kids img {
             width: 300px;
@@ -1353,6 +1322,7 @@ footer {
         .reserve-button {
             width: 170px;
         }
+        
       }
 
 
