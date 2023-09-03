@@ -54,25 +54,72 @@
             <p class="ticket-p">Payment on arrival. Tickets can also be booked at the Museum.</p>
         </div>
         <div class="ticket-main">
+            <h3 class="section-headings">1. Choose day</h3>
             <div class="choose-day">
-                <h3>Choose day</h3>
                 <img src="img/calendar.jpg">
+                <input type="date" id="ticket-reserve" name="choose-day" value="2023-09-01" min="2023-09-18" max="2023-12-31">
             </div>
+            <div class="choose-arrangement">
+                <h3 class="section-headings">2. Choose ticket type</h3>
+                    <legend>Please choose one or more options below</legend>
+                    <!-- MAKE ONE CHECKBOX REQUIRED BEFORE RESERVING TICKETS IN JAVASCRIPT-->
+                    <div class="ticket-type-checkbox">
+                        <input type="checkbox" id="arrangement1">
+                        <label for="arrangement1">Night at the Museum</label>
+                    </div>
+                    <div class="ticket-type-checkbox">
+                        <input type="checkbox" id="arrangement2">
+                        <label for="arrangement2">Visiting Professor of Aeronautics</label>
+                    </div>
+                    <div class="ticket-type-checkbox">
+                        <input type="checkbox" id="arrangement3">
+                        <label for="arrangement3">Energetica Exhibition on Loan</label>
+                    </div>
+                    <div class="ticket-type-checkbox">
+                        <input type="checkbox" id="normal-ticket" required>
+                        <label for="normal-ticket">Ordinary entry ticket</label>
+                    </div>
+            </div>
+            <!--  ADD JAVASCRIPT TO ADD AND SUBTRACT-->
             <div class="choose-tickets">
-                <h3>Choose tickets</h3>
-                <div class="kids-youth">
-                    <img src="vector/number-of-people.svg">
-                    <p>Kids/Youth under 18 years</p>
+                <h3 class="section-headings">3. Choose number of tickets</h3>
+                <div class="number-type">
+                <div class="add-subtrackt-button">
+                    <button  id="minus">-</button>
+                    <p class="number">5</p>
+                    <button id="plus">+</button>
                 </div>
-                <div class="adults">
-                    <img src="vector/number-of-people.svg">
-                    <p>Adults over 18 years</p>
+                <p class="type">Kids/Youth under 18 years</p>
+            </div>
+            <div class="number-type">
+                <div class="add-subtrackt-button">
+                    <button  id="minus">-</button>
+                    <p class="number">0</p>
+                    <button id="plus">+</button>
                 </div>
-                <div class="groups">
-                    <img src="vector/number-of-people.svg">
-                    <p>Group (must be over 8 attendees)</p>
+                <p class="type">Adults over 18 years</p>
                 </div>
-                <div class="reserve-button"><a href="#">RESERVE TICKETS</a></div>
+                <div class="number-type">
+                <div class="add-subtrackt-button">
+                    <button  id="minus">-</button>
+                    <p class="number">0</p>
+                    <button id="plus">+</button>
+                </div>
+                <p class="type">Group (must be over 6 attendees)</p>
+            </div>
+            <h3 class="section-headings">4. Add information</h3>
+            <div class="user-information">
+                <form action="index.html" method="GET">
+                <fieldset>
+                    <legend>Tickets will be sent to your email</legend>
+                    <label for="name">Name:*</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email:*</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                </fieldset><button type="submit" class="reserve-button">RESERVE TICKETS</button>
+                </form>
+            </div>
             </div>
         </div>
     </div>
