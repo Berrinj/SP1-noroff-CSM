@@ -93,6 +93,10 @@ nav a {
     display: none;
 }
 
+label p {
+    display: none;
+}
+
 .hamburger-menu ul{
     position: absolute;
     width: 100vw;
@@ -896,13 +900,14 @@ textarea[name] {
     padding-left: 20px;
 }
 
-.ticket-main img {
+.choose-day label {
     max-width: 370px;
     padding: 0 20px;
 }
 
 .choose-day {
     display: flex;
+    flex-direction: column;
 }
 
 input[type=date] {
@@ -948,7 +953,7 @@ input[type=date] {
 .add-subtrackt-button button {
     height: 40px;
     width: 30px;
-    background-color: #159947;
+    background-color: #1F5F5B;
     color: #fff;
 }
 
