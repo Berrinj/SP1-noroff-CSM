@@ -57,7 +57,7 @@
         <div class="ticket-main">
             <h3 class="section-headings">1. Choose day</h3>
             <div class="choose-day">
-                <img src="img/calendar.jpg">
+                <img src="img/calendar.jpg" alt="Image of a calendar, September 2023">
                 <input type="date" id="ticket-reserve" name="choose-day" value="2023-09-01" min="2023-09-18" max="2023-12-31">
             </div>
             <div class="choose-arrangement">
@@ -86,25 +86,25 @@
                 <h3 class="section-headings">3. Choose number of tickets</h3>
                 <div class="number-type">
                 <div class="add-subtrackt-button">
-                    <button  id="minus">-</button>
+                    <button  class="minus">-</button>
                     <p class="number">5</p>
-                    <button id="plus">+</button>
+                    <button class="plus">+</button>
                 </div>
                 <p class="type">Kids/Youth under 18 years</p>
             </div>
             <div class="number-type">
                 <div class="add-subtrackt-button">
-                    <button  id="minus">-</button>
+                    <button class="minus">-</button>
                     <p class="number">0</p>
-                    <button id="plus">+</button>
+                    <button class="plus">+</button>
                 </div>
                 <p class="type">Adults over 18 years</p>
                 </div>
                 <div class="number-type">
                 <div class="add-subtrackt-button">
-                    <button  id="minus">-</button>
+                    <button class="minus">-</button>
                     <p class="number">0</p>
-                    <button id="plus">+</button>
+                    <button class="plus">+</button>
                 </div>
                 <p class="type">Group (must be over 6 attendees)</p>
             </div>
@@ -112,12 +112,11 @@
             <div class="user-information">
                 <form action="index.html" method="GET">
                 <fieldset>
-                    <legend>Tickets will be sent to your email</legend>
+                    <p>Tickets will be sent to your email.</p>
                     <label for="name">Name:*</label>
                     <input type="text" name="name" id="name" required>
                     <label for="email">Email:*</label>
                     <input type="email" name="email" id="email" required>
-                    
                 </fieldset><button type="submit" class="reserve-button">RESERVE TICKETS</button>
                 </form>
             </div>

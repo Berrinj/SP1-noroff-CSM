@@ -965,12 +965,12 @@ input[type=date] {
     padding: 0 10px;
 }
 
-#plus {
+.plus {
     margin-right: 10px;
     border-radius: 0 10px 10px 0;
 }
 
-#minus {
+.minus {
     border-radius: 10px 0 0 10px;
 }
 
