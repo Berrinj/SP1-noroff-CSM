@@ -84,12 +84,16 @@ nav a {
     line-height: 80px;
 }
 
-.hamburger-menu, 
+.active {
+    text-decoration: line-through;
+}
+
+.hamburger-menu ul, 
 #menu-checkbox, .fas.fa-bars {
     display: none;
 }
 
-.hamburger-menu {
+.hamburger-menu ul{
     position: absolute;
     width: 100vw;
     height: auto;
@@ -97,6 +101,7 @@ nav a {
     z-index: 2000;
     background-color: #1F5F5B;
     box-shadow: 0 4px 2px 1px #6662625e;
+    margin: 0;
 }
 
 .hamburger-menu a {
@@ -119,7 +124,7 @@ nav a {
     background-color: #159947;
 }
 
-#menu-checkbox:checked~.hamburger-menu {
+#menu-checkbox:checked~.hamburger-menu ul {
     display: block;
 }
 
@@ -535,6 +540,21 @@ h4.intro {
 }
 
 /* EXHIBITIONS.HTML*/
+
+.page-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 700px;
+    margin: auto;
+    font-style: italic;
+}
+
+.page-navigation p {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+}
 
 .exhibitions-grid {
     background-color: rgba(255,255,255, 0.8);

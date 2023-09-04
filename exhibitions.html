@@ -21,7 +21,7 @@
     <div class="opening-hours"><p>Open today:</p> <p>10am - 5pm</p></div>
     <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="exhibitions.html">Exhibitions</a></li>
+    <li class="active"><a href="exhibitions.html">Exhibitions</a></li>
     <li><a href="explore.html">Explore</a></li>
     <li><a href="info.html">Info</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -31,12 +31,13 @@
 <label for="menu-checkbox"><i class="fas fa-bars fa-3x"></i>
     </label>
     <div class="hamburger-menu">
+      <ul>
       <li><a href="tickets.html">Book Tickets</a></li>
-      <li><a href="index.html">Home</a></li>
       <li><a href="exhibitions.html">Exhibitions</a></li>
       <li><a href="explore.html">Explore</a></li>
       <li><a href="info.html">Info</a></li>
       <li><a href="contact.html">Contact</a></li>
+    </ul>
     </div>
 </nav>
 <main>
@@ -52,17 +53,24 @@
             <h1>Exhibitions</h1>
             <h4 class="intro">Welcome to a world of discovery and wonder at our Science Museum exhibitions. Here, the realms of curiosity and knowledge collide to ignite your imagination and expand your understanding of the universe we inhabit.</h4>
         </div>
+        <div class="page-navigation">
+          <p><a href="#paleontology">Paleontology</p></a> 
+          <p><a href="#robotics-ai">Robotics & AI</p></a>
+          <p><a href="#evolution">Evolution</p></a>
+          <p><a href="#cosmology">Cosmology</p></a>
+          <p><a href="#biology-medicine">Biology & Medicine</p></a>
+        </div>
 
             <div class="exhibitions-grid">
-                <img class="smallest-screen" src="img/exh-paleontology.jpg">
+                <img id="paleontology" src="img/exh-paleontology.jpg">
                 <h2>PALEONTOLOGY</h2>
                 <p class="p-one">Step back in time and unearth the secrets of ancient worlds at our Paleontology Exhibition. This captivating showcase takes you on a journey through the ages, where fossils and remains reveal the astonishing stories of prehistoric life. Marvel at the skeletal remains of long-extinct giants, from colossal dinosaurs that once ruled the land to the awe-inspiring marine creatures that dominated ancient seas.</p>
                 <p class="p-two">As you explore this exhibition, you'll gain a profound appreciation for the diversity of life that has existed over millions of years. Join us as we uncover the mysteries of vanished ecosystems, celebrate the tenacity of life in the face of challenges, and bridge the gap between the past and present through the remarkable science of paleontology.</p>
             </div>
             <div class="enter-button"><a href="paleontology.html">ENTER</a></div>
 
-            <div class="exhibitions-grid">
-                <img class="smallest-screen" src="img/exh-roboticsandai.jpg">
+            <div class="exhibitions-grid" >
+                <img id="robotics-ai" src="img/exh-roboticsandai.jpg">
                 <h2>ROBOTICS & AI</h2>
                 <p class="p-one">The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
                 <p class="p-two"></p>
@@ -70,7 +78,7 @@
             <div class="enter-button"><a href="paleontology.html">ENTER</a></div>
 
             <div class="exhibitions-grid">
-                <img class="smallest-screen" src="img/exh-evolution.jpg">
+                <img id="evolution" src="img/exh-evolution.jpg">
                 <h2>EVOLUTION</h2>
                 <p class="p-one">For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.</p>
                 <p class="p-two">Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn’t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
@@ -78,7 +86,7 @@
             <div class="enter-button"><a href="paleontology.html">ENTER</a></div>
 
             <div class="exhibitions-grid">
-                <img class="smallest-screen" src="img/exh-cosmology.jpg">
+                <img id="cosmology" src="img/exh-cosmology.jpg">
                 <h2>COSMOLOGY</h2>
                 <p class="p-one">Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky Above Us’, explores the night sky and what we can see and know about the universe around us. We’ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
                 <p class="p-two">Follow the journey of our solar exploration: from early Arab traders, to Galileo’s telescope, to the latest exploration of the planets in our solar system.</p>
@@ -86,7 +94,7 @@
             <div class="enter-button"><a href="paleontology.html">ENTER</a></div>
 
             <div class="exhibitions-grid">
-                <img src="img/exh-biomed.jpg">
+                <img id="biology-medicine" src="img/exh-biomed.jpg">
                 <h2>BIOLOGY & MEDICINE</h2>
                 <p class="p-one">From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world. 
                   For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant. 
