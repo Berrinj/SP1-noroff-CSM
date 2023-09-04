@@ -209,7 +209,7 @@ header {
 /*   index.html: See all exhibitions button    */
 .see-all-button {
     width: 250px;
-    background-color: #49B265;
+    background-color: #3e9956;
     color: aliceblue;
     text-align: center;
     font-size: 18px;
@@ -469,7 +469,7 @@ h4.intro {
 }
 
 .date {
-    background-color: #49B265;
+    background-color: #246d68;
     width: 50px;
     height: 55px;
     flex-shrink: 0;
