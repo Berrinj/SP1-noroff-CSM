@@ -1,3 +1,21 @@
+/*
+ || 1. Sitewide, body and main.
+ ||     1.1 Top bar / Nav bar
+        1.2 Footer
+ || 2. All button styling
+ || 3. Index.html
+ || 4. Exhibitions.html
+ || 5. Explore.html
+ || 6. Info.html
+ || 7. Contact.html
+ || 8. Getinvolved.html
+ || 9. Paleontology.html
+ || 10. Tickets.html
+ || 11. Media Query
+*/
+
+/* || 1.  SITEWIDE  BODY AND MAIN */
+
 body {
     margin: 0;
     padding: 0;
@@ -8,15 +26,97 @@ body {
     font-family: "Open sans", "Trebuchet MS", sans-serif;
 }
 
-body a {
+a {
     text-decoration: none;
     cursor: pointer;
     color: inherit;
 }
 
-body ul {
+ul {
     padding: 0;
 }
+
+.breadcrumbs {
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: arial;
+    padding-top: 20px;
+    color: #474747;
+}
+  
+.breadcrumbs a {
+    font-style: italic;
+}
+
+main {
+    max-width: 1224px;
+    background-color: white; /*Fallback color*/
+    margin: auto;
+    padding-bottom: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background-image: url(img/main-background-img.jpg);
+    background-position: center top;
+}
+
+main h1 {
+    text-align: center;  
+}
+
+.main-content {
+    padding-left: 7%;
+    padding-right: 7%;
+    
+} 
+
+.introduction h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
+
+
+.intro {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+h4.intro {
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.section-headings {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    background-color: rgba(6,55,58, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+}
+
+.backtotop {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    color:#000;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.backtotop:hover {
+    color: #159947;  
+}
+
+
+/* || 1.1 TOP BAR / NAV BAR   */
 
 nav {
     height: 80px;
@@ -58,8 +158,7 @@ nav ul {
     display: flex;
     width: 700px;
     justify-content: space-between;
-    margin: 0 0 0 10px; 
-    padding: 0;
+    margin: 0 0 0 10px;
     order: 3;
     gap: 5%;
 }
@@ -79,7 +178,7 @@ nav a:hover {
     color:#159947;
 }
 
-nav a {
+nav a, .active {
     height: 80px;
     line-height: 80px;
 }
@@ -148,18 +247,229 @@ label p {
     padding-left: 0;
 }
 
-.breadcrumbs {
+
+/* || 1.2 FOOTER */
+
+footer {
+    height: 300px;
+    background-color: #062315;
+    display: flex;
     text-align: center;
-    font-size: 0.75rem;
-    font-family: arial;
-    padding-top: 20px;
-    color: #474747;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+        
 }
-  
-.breadcrumbs a {
+      
+.footer-content {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    max-width: 1500px;
+    margin: auto;
+}
+
+footer li {
+    display: block;
+    font-size: 16px;
+}
+      
+footer p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+      
+footer .fcenter img {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+      
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+footer .socials img {
+    width: 32px;
+    height: 32px;
+}
+
+      
+.fleft {
+    width: 200px;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fleft img{
+    width: 170px;
+    height: 92px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fleft p {
+    width: 200px;
+    text-align: left;
+    padding: 0;
+}
+      
+.fcenter {
+    text-align: center;
+}
+
+.fcenter p {
+    margin: 0;
+}
+      
+.fright {
+    text-align: right;
+    line-height: 26px;
+    padding-right: 10%;
+    width: 200px;
+}
+      
+.fright a {
     color: inherit;
-    font-style: italic;
 }
+      
+.fright li:hover {
+    color: #49B265;
+}
+
+
+/* || 2. ALL BUTTONS STYLING  (not add-subtrackt button on tickets page */
+
+/* || 2.1 a styling several buttons */
+.ticket-button a, .see-all-button a, .enter-button a, .back-to-exhibitions-button a {
+    display: block;
+}
+
+/* || 2.2 Book tickets button, on most pages */
+.ticket-button {
+    max-width: 300px;
+    background-color: #159947;
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 0;
+    border-radius: 0 0 6px 6px;
+    padding: 20px;
+    box-shadow: 0 8px 6px -6px black;
+    /*position: sticky;
+    top: 0px;*/
+}
+.ticket-button:hover {
+    background-color: #1cbd59;
+}
+
+/* || 2.3 index.html: See all exhibitions button */
+.see-all-button {
+    width: 250px;
+    background-color: #3e9956;
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 0px;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 8px 6px -6px black;
+}
+.see-all-button:hover {
+    background-color: #3e9956;
+}
+
+/* || 2.4 Exhibitions.html: Enter exhibition */
+.enter-button {
+    width: 150px;
+    background-color: #1F5F5B;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: auto; 
+    margin-right: 0;
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+    box-shadow: 0 8px 6px -6px black;
+}
+.enter-button:hover {
+    background-color: #297A75;
+}
+
+/* || 2.5 Paleontolohy.html: back to exhibitions button */
+.back-to-exhibitions-button {
+    width: 150px;
+    background-color: #1F5F5B;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+    margin-top: -30px;
+    box-shadow: 0 8px 6px -6px black;
+  }
+.back-to-exhibitions-button:hover {
+    background-color: #246d68;
+  }
+
+/* || 2.6 Tickets.html: Reserve tickets button */
+.reserve-button {
+    display: block;
+    width: 250px;
+    background-color: #49B265;
+    color: aliceblue;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px auto;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 8px 6px -6px black;
+    border: none;
+    cursor: pointer;
+}
+.reserve-button:hover {
+    background-color: #1cbd59;
+}
+
+/* || 2.7 Contact.html: Send form button */
+.send-button {
+    padding: 15px;
+    width: 100px;
+    background-color: #159947;
+    color: #fff;
+    border-radius: 6px;
+    float: right;
+    box-shadow: 0 8px 6px -6px black;
+    border: none;
+}
+.send-button:hover {
+    background-color: #1cbd59;
+    cursor: pointer;
+}
+
+
+/* || 3. INDEX.HTML */
 
 header {
     height: 420px;
@@ -180,199 +490,6 @@ header {
     margin: 0 auto;
     
 }
-/*   ALL BUTTONS STYLING  */
-
-/*   all button a styling    */
-.ticket-button a, .see-all-button a, .enter-button a, .back-to-exhibitions-button a {
-    display: block;
-}
-
-/*   Book tickets button, on most pages    */
-.ticket-button {
-    max-width: 300px;
-    background-color: #159947;
-    color: aliceblue;
-    text-align: center;
-    font-size: 20px;
-    margin: auto;
-    margin-top: 0;
-    border-radius: 0 0 6px 6px;
-    padding: 20px;
-    box-shadow: 0 8px 6px -6px black;
-    /*position: sticky;
-    top: 0px;*/
-}
-.ticket-button:hover {
-    background-color: #1cbd59;
-}
-
-/*   index.html: See all exhibitions button    */
-.see-all-button {
-    width: 250px;
-    background-color: #3e9956;
-    color: aliceblue;
-    text-align: center;
-    font-size: 18px;
-    margin: auto;
-    margin-top: 0px;
-    border-radius: 6px;
-    padding: 15px;
-    box-shadow: 0 8px 6px -6px black;
-}
-.see-all-button:hover {
-    background-color: #3e9956;
-}
-
-/*   Exhibitions.html: Enter exhibition     */
-.enter-button {
-    width: 150px;
-    background-color: #1F5F5B;
-    font-weight: 600;
-    color: aliceblue;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 0;
-    margin-left: auto; 
-    margin-right: 0;
-    border-radius: 0 0 6px 6px;
-    padding: 10px;
-    box-shadow: 0 8px 6px -6px black;
-}
-.enter-button:hover {
-    background-color: #297A75;
-}
-
-/*   Paleontolohy.html: back to exhibitions button   */
-.back-to-exhibitions-button {
-    width: 150px;
-    background-color: #1F5F5B;
-    font-weight: 600;
-    color: aliceblue;
-    text-align: center;
-    font-size: 16px;
-    margin: auto;
-    border-radius: 0 0 6px 6px;
-    padding: 10px;
-    margin-top: -30px;
-    box-shadow: 0 8px 6px -6px black;
-  }
-.back-to-exhibitions-button:hover {
-    background-color: #246d68;
-  }
-
-/*   Tickets.html: Reserve tickets button     */
-.reserve-button {
-    display: flex;
-    justify-content: center;
-    width: 250px;
-    background-color: #49B265;
-    color: aliceblue;
-    text-align: center;
-    font-size: 18px;
-    margin: 30px auto;
-    margin-top: 30px;
-    border-radius: 6px;
-    padding: 15px;
-    box-shadow: 0 8px 6px -6px black;
-    border: none;
-    cursor: pointer;
-}
-.reserve-button:hover {
-    background-color: #1cbd59;
-}
-
-/*   Contact.html: Send form button    */
-.send-button {
-    padding: 15px;
-    width: 100px;
-    background-color: #159947;
-    color: #fff;
-    border-radius: 6px;
-    float: right;
-    box-shadow: 0 8px 6px -6px black;
-    border: none;
-}
-.send-button:hover {
-    background-color: #1cbd59;
-    cursor: pointer;
-}
-
-
-/*    MAIN   */
-
-main {
-    max-width: 1224px;
-    background-color: white; /*Fallback color*/
-    margin: auto;
-    padding-bottom: 1%;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    background-image: url(img/main-background-img.jpg);
-    background-position: center top;
-}
-
-main h1 {
-    text-align: center;  
-}
-
-.main-content {
-    padding-left: 7%;
-    padding-right: 7%;
-    
-} 
-
-.introduction h3 {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-    font-size: 18px;
-}
-
-
-.intro {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-}
-
-h4.intro {
-    max-width: 800px;
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
-.section-headings {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    background-color: rgba(6,55,58, 0.6);
-    color: #fff;
-    padding: 10px;
-    border-radius: 6px 6px 0 0;
-}
-
-.backtotop {
-    width: 100px;
-    margin: auto;
-    text-align: center;
-    color:#000;
-    margin-bottom: 30px;
-    margin-top: 25px;
-    font-size: 14px;
-  }
-  
-  .backtotop a {
-    color: inherit;
-  }
-
-  .backtotop:hover {
-    color: #159947;  
-  }
-
-
-/* INDEX.HTML */
 
 .introlongtext {
     display: flex;
@@ -543,7 +660,8 @@ h4.intro {
     border-radius: 6px 6px 0 0;
 }
 
-/* EXHIBITIONS.HTML*/
+
+/* || 4. EXHIBITIONS.HTML */
 
 .page-navigation {
     display: flex;
@@ -610,7 +728,7 @@ h4.intro {
 }
 
 
-/*    EXPLORE PAGE    */
+/* || 5. EXPLORE.HTML */
 
 .explore-page-container {
     max-width: 1000px;
@@ -652,7 +770,7 @@ h4.intro {
 }
 
 
-  /*     INFO PAGE     */
+/* || 6. INFO.HTML */
 
 .info-containers {
     display: flex;
@@ -728,7 +846,7 @@ h4.intro {
 }
 
 
-/*       CONTACT PAGE       */
+/* || 7. CONTACT.HTML */
 
 .contact-main {
     display: flex;
@@ -771,10 +889,6 @@ fieldset input {
     border-radius: 7px;
 }
   
-fieldset ul {
-    padding: 0;
-}
-  
 input[type] {
     width: 100%;
     padding: 12px 12px;
@@ -804,7 +918,7 @@ textarea[name] {
 }
 
 
-/*           GET INVOLVED PAGE         */
+/* || 8. GETINVOLVED.HTML */
 
 .get-involved-main {
     max-width: 1000px;
@@ -837,7 +951,7 @@ textarea[name] {
 }
 
 
-/*    PALEONTOLOGY         */
+/* || 9. PALEONTOLOGY.HTML */
 
 .pal-con-1, .pal-con-2 {
     max-width: 1000px;
@@ -872,7 +986,7 @@ textarea[name] {
 }
 
 
-/*            TICKET PAGE            */
+/* || 10. TICKETS.HTML */
 
 .ticket-p {
     max-width: 1000px;
@@ -979,122 +1093,17 @@ input[type=date] {
     border-radius: 10px 0 0 10px;
 }
 
+.user-information {
+    padding: 0 20px 0 20px;
+}
+
 /* 
 Button add or subtract inspo:
 https://www.youtube.com/watch?v=07MslbPos4U
 */
 
-.user-information {
-    padding: 0 20px 0 20px;
-}
 
-
-/* FOOTER */
-
-footer {
-    height: 300px;
-    background-color: #062315;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    color: #fff;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-        
-}
-      
-.footer-content {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    max-width: 1500px;
-    margin: auto;
-}
-
-footer li {
-    display: block;
-    font-size: 16px;
-}
-      
-footer p {
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-      
-footer .fcenter img {
-    margin-right: 6px;
-    margin-left: 6px;
-}
-      
-.socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-footer .socials img {
-    width: 32px;
-    height: 32px;
-}
-
-      
-.fleft {
-    width: 200px;
-    padding-left: 10%;
-    display: flex;
-    flex-direction: column;
-}
-
-.fleft img{
-    width: 170px;
-    height: 92px;
-    object-fit: cover;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.fleft p {
-    width: 200px;
-    text-align: left;
-    padding: 0;
-}
-      
-.fcenter {
-    text-align: center;
-}
-
-.fcenter p {
-    margin: 0;
-}
-      
-.fright {
-    text-align: right;
-    line-height: 26px;
-    padding-right: 10%;
-    width: 200px;
-}
-      
-.fright a {
-    color: inherit;
-}
-      
-.fright li:hover {
-    color: #49B265;
-}
-      
-
-      /* MEDIA QUERY */
+/* || 11. MEDIA QUERY */
 
 
       @media screen and (max-width: 1188px) {
@@ -1129,7 +1138,7 @@ footer .socials img {
         
       }
  
-      @media screen and (min-width: 0px) and (max-width: 925px) {
+      @media screen and (max-width: 925px) {
         
         .nav-content {
             padding-left: 0;
@@ -1249,7 +1258,7 @@ footer .socials img {
 
       }
 
-      @media screen and (min-width: 0px) and (max-width: 582px) {
+      @media screen and (max-width: 582px) {
 
         .ticket-button {
             width: 150px;
@@ -1356,6 +1365,7 @@ footer .socials img {
     margin: auto;
 }
 }
+
 /* Header img: Photo by Romain Tordo on Unsplash
 background opacity https://stackoverflow.com/
 CSS grids MDN
