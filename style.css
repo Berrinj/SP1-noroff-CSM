@@ -792,9 +792,10 @@ header {
     object-fit: cover;
 }
 
-.informational-container h4{
+.informational-container h3{
     background-color: var(--heading-bg-dark-blue-green);
     height: 38px;
+    font-size: 16px;
     color: var(--text-white);
     margin: 0;
     display: flex;
