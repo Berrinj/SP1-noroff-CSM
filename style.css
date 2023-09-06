@@ -16,13 +16,21 @@
 
 /* || 1.  SITEWIDE  BODY AND MAIN */
 
+:root {
+    --btn-bg-green: #008937;
+    --hover-btn-bg-green: #159947;
+    --text-white: #fff;
+    --bg-nav-green-blue: #1F5F5B;
+    --heading-bg-dark-blue-green: #06373A;
+    --bg-light-grey: #F0ECEC;
+    --hover-link: #159947;
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #1F5F5B;
     background-color: #000;
-    /*background-color: #fff;*/
     font-family: "Open sans", "Trebuchet MS", sans-serif;
 }
 
@@ -96,7 +104,7 @@ h4.intro {
     margin-bottom: 20px;
     max-width: 100%;
     background-color: rgba(6,55,58, 0.6);
-    color: #fff;
+    color: var(--text-white);
     padding: 10px;
     border-radius: 6px 6px 0 0;
 }
@@ -112,7 +120,7 @@ h4.intro {
 }
 
 .backtotop:hover {
-    color: #159947;  
+    color: var(--hover-link);  
 }
 
 
@@ -120,12 +128,11 @@ h4.intro {
 
 nav {
     height: 80px;
-    background-color: #1F5F5B;
+    background-color: var(--bg-nav-green-blue);
     font-family: "Trebuchet MS", "Open sans";
     position: sticky;
     top: 0;
     z-index: 1000;
-    /*background-color: #3a5171;*/
     
 }
 
@@ -170,12 +177,12 @@ nav li {
     flex-wrap: wrap;
     list-style: none;
     gap: 10%;
-    color: white;
+    color: var(--text-white);
     text-shadow: 1px 1px 2px #062315;
 }
 
 nav a:hover {
-    color:#159947;
+    color:var(--hover-link);
 }
 
 nav a, .active {
@@ -202,7 +209,7 @@ label p {
     height: auto;
     top: 80px;
     z-index: 2000;
-    background-color: #1F5F5B;
+    background-color: var(--bg-nav-green-blue);
     box-shadow: 0 4px 2px 1px #6662625e;
     margin: 0;
 }
@@ -224,7 +231,7 @@ label p {
 }
 
 .hamburger-menu li:first-child {
-    background-color: #159947;
+    background-color: var(--btn-bg-green);
 }
 
 #menu-checkbox:checked~.hamburger-menu ul {
@@ -257,7 +264,7 @@ footer {
     text-align: center;
     justify-content: space-around;
     align-items: center;
-    color: #fff;
+    color: var(--text-white);
     width: 100%;
     padding: 0;
     margin: 0;
@@ -270,7 +277,6 @@ footer {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -349,11 +355,23 @@ footer .socials img {
 }
       
 .fright li:hover {
-    color: #49B265;
+    color: var(--hover-link);
 }
 
 
 /* || 2. ALL BUTTONS STYLING  (not add-subtrackt button on tickets page */
+
+.btn {
+    background-color: var(--btn-bg-green);
+    color: var(--text-white);
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.btn:hover {
+    background-color: var(--hover-btn-bg-green);
+}
 
 /* || 2.1 a styling several buttons */
 .ticket-button a, .see-all-button a, .enter-button a, .back-to-exhibitions-button a {
@@ -363,43 +381,27 @@ footer .socials img {
 /* || 2.2 Book tickets button, on most pages */
 .ticket-button {
     max-width: 300px;
-    background-color: #159947;
-    color: aliceblue;
-    text-align: center;
     font-size: 20px;
-    margin: auto;
     margin-top: 0;
-    border-radius: 0 0 6px 6px;
     padding: 20px;
-    box-shadow: 0 8px 6px -6px black;
+    border-radius: 0 0 6px 6px;
     /*position: sticky;
     top: 0px;*/
-}
-.ticket-button:hover {
-    background-color: #1cbd59;
 }
 
 /* || 2.3 index.html: See all exhibitions button */
 .see-all-button {
     width: 250px;
-    background-color: #3e9956;
-    color: aliceblue;
-    text-align: center;
     font-size: 18px;
-    margin: auto;
     margin-top: 0px;
     border-radius: 6px;
     padding: 15px;
-    box-shadow: 0 8px 6px -6px black;
-}
-.see-all-button:hover {
-    background-color: #3e9956;
 }
 
 /* || 2.4 Exhibitions.html: Enter exhibition */
 .enter-button {
     width: 150px;
-    background-color: #1F5F5B;
+    background-color: var(--bg-nav-green-blue);
     font-weight: 600;
     color: aliceblue;
     text-align: center;
@@ -412,13 +414,13 @@ footer .socials img {
     box-shadow: 0 8px 6px -6px black;
 }
 .enter-button:hover {
-    background-color: #297A75;
+    background-color: var(--hover-btn-bg-green);
 }
 
 /* || 2.5 Paleontolohy.html: back to exhibitions button */
 .back-to-exhibitions-button {
     width: 150px;
-    background-color: #1F5F5B;
+    background-color: var(--bg-nav-green-blue);
     font-weight: 600;
     color: aliceblue;
     text-align: center;
@@ -430,15 +432,15 @@ footer .socials img {
     box-shadow: 0 8px 6px -6px black;
   }
 .back-to-exhibitions-button:hover {
-    background-color: #246d68;
+    background-color: var(--hover-btn-bg-green);
   }
 
 /* || 2.6 Tickets.html: Reserve tickets button */
 .reserve-button {
     display: block;
     width: 250px;
-    background-color: #49B265;
-    color: aliceblue;
+    background-color: var(--btn-bg-green);
+    color: var(--text-white);
     text-align: center;
     font-size: 18px;
     margin: 30px auto;
@@ -449,22 +451,16 @@ footer .socials img {
     cursor: pointer;
 }
 .reserve-button:hover {
-    background-color: #1cbd59;
+    background-color: var(--hover-btn-bg-green);
 }
 
 /* || 2.7 Contact.html: Send form button */
 .send-button {
     padding: 15px;
     width: 100px;
-    background-color: #159947;
-    color: #fff;
     border-radius: 6px;
     float: right;
-    box-shadow: 0 8px 6px -6px black;
     border: none;
-}
-.send-button:hover {
-    background-color: #1cbd59;
     cursor: pointer;
 }
 
@@ -533,7 +529,7 @@ header {
 }
 
 .ex-label {
-    background-color: #06373A;
+    background-color: var(--heading-bg-dark-blue-green);
     height: 50px;
     color: white;
     text-align: center;
@@ -555,7 +551,7 @@ header {
 
 .informational-containers h4 {
     text-align: center;
-    background-color: #06373A;
+    background-color: var(--heading-bg-dark-blue-green);
     color: white;
     padding: 10px;
     margin: 0 0 10px 0;
@@ -566,7 +562,7 @@ header {
     height: auto;
     width: 250px;
     box-shadow: 0 8px 6px -1px grey;
-    background-color: #F0ECEC;
+    background-color: var(--bg-light-grey);
     border-radius: 6px;
 }
 .program-container h5 {
@@ -586,15 +582,15 @@ header {
 }
 
 .date {
-    background-color: #246d68;
+    background-color: var(--bg-nav-green-blue);
     width: 50px;
     height: 55px;
     flex-shrink: 0;
     margin-left: 8px;
     text-align: center;
     padding: 8px;
-    color: #fff;
-    border: 1px solid #06373A;
+    color: var(--text-white);
+    border: 1px solid black;
 }
 
 .date h5 {
@@ -765,8 +761,7 @@ header {
 }
 
 .explore-page-container a {
-    color: #1F5F5B;
-    font-weight: 600;
+    color: blue;
 }
 
 
@@ -794,9 +789,9 @@ header {
 }
 
 .informational-container h4{
-    background-color: #06373A;
+    background-color: var(--heading-bg-dark-blue-green);
     height: 38px;
-    color: #fff;
+    color: var(--text-white);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -819,7 +814,7 @@ header {
     margin: 2px 10px 2px 10px;
 }
 
-.admission-img {
+.admission-img, .opening-hours-img {
     height: 130px;
 }
 
@@ -867,8 +862,8 @@ header {
 .phone-email {
     max-width: auto;
     text-align: center;
-    background-color: #1F5F5B;
-    color: #fff;
+    background-color: var(--bg-nav-green-blue);
+    color: var(--text-white);
     padding: 50px;
     border-radius: 6px;
 }
@@ -1015,7 +1010,7 @@ textarea[name] {
 }
 
 .choose-day label {
-    max-width: 370px;
+    max-width: fit-content;
     padding: 0 20px;
 }
 
@@ -1025,8 +1020,7 @@ textarea[name] {
 }
 
 input[type=date] {
-    max-width: 200px;
-    height: fit-content;
+    max-width: fit-content;
     margin-left: 20px;
 }
 
@@ -1067,8 +1061,8 @@ input[type=date] {
 .add-subtrackt-button button {
     height: 40px;
     width: 30px;
-    background-color: #1F5F5B;
-    color: #fff;
+    background-color: var(--btn-bg-green);
+    color: var(--text-white);
 }
 
 .add-subtrackt-button .number {
@@ -1106,7 +1100,7 @@ https://www.youtube.com/watch?v=07MslbPos4U
 /* || 11. MEDIA QUERY */
 
 
-      @media screen and (max-width: 1188px) {
+    @media screen and (max-width: 1188px) {
 
         .section-headings {
             margin: 20px auto;
@@ -1136,9 +1130,9 @@ https://www.youtube.com/watch?v=07MslbPos4U
             border-radius: 6px 6px 0 0;
         }
         
-      }
+    }
  
-      @media screen and (max-width: 925px) {
+    @media screen and (max-width: 925px) {
         
         .nav-content {
             padding-left: 0;
@@ -1226,7 +1220,7 @@ https://www.youtube.com/watch?v=07MslbPos4U
 
         .fright {
             width: 100vw;
-            background-color: #1F5F5B;
+            background-color: var(--bg-nav-green-blue);
             text-align: center;
             font-size: 16px;
         }
@@ -1256,9 +1250,9 @@ https://www.youtube.com/watch?v=07MslbPos4U
             order: 3;
         }
 
-      }
+    }
 
-      @media screen and (max-width: 582px) {
+    @media screen and (max-width: 582px) {
 
         .ticket-button {
             width: 150px;
@@ -1271,7 +1265,7 @@ https://www.youtube.com/watch?v=07MslbPos4U
             position: absolute;
             right: 12px;
             top: 17px;
-            color: #Fff;
+            color: var(--text-white);
             display: block;
         }
 
@@ -1319,52 +1313,46 @@ https://www.youtube.com/watch?v=07MslbPos4U
             padding: 0 20px 0 20px;
             margin-top: 5px;
         }
-
-        .reserve-button {
-            width: 170px;
-        }
         
-      }
-
-
-      /*   DO I NEED LESS THEN 360PX??     */
-
-
-      @media screen and (min-width: 0px) and (max-width: 328px) {
-      header img {
-        width: 250px;
     }
 
-    .opening-hours {
-        display: none;
+
+    @media screen and (max-width: 328px) {
+
+        header img {
+            width: 250px;
+        }
+
+        .opening-hours {
+            display: none;
+        }
+
+        img.smallest-screen {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .see-all-button, .reserve-button {
+            width: 150px;
+        }
+
+        .schedule p{
+            font-size: 14px;
+        }
+        .time, .days {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .exhibitions-grid h2 {
+            letter-spacing: 0;
+        }
+
+        .enter-button {
+            margin: auto;
+        }
     }
-
-    img.smallest-screen {
-        width: 277px;
-        height: 100px;
-        object-fit: cover;
-    }
-
-.see-all-button {
-    width: 200px;
-}
-
-.schedule p{
-    font-size: 14px;
-}
- .time, .days {
-    margin-right: 10px;
-    margin-left: 10px;
- }
-
- .exhibitions-grid h2 {
-    letter-spacing: 0;
-}
-
-.enter-button {
-    margin: auto;
-}
-}
 
 /* Header img: Photo by Romain Tordo on Unsplash
 background opacity https://stackoverflow.com/
