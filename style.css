@@ -1033,7 +1033,7 @@ input[type=date] {
     margin-left: 20px;
 }
 
-.choose-arrangement legend {
+.choose-arrangement p {
     padding: 0 20px 0 20px;
     font-style: italic;
 }
