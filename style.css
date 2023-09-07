@@ -619,14 +619,26 @@ header {
 .about-event p {
     font-size: 14px;
 }
-.openinghours-container ul {
-    list-style: none;
-    padding: 5%;
-    margin: 0;
+
+.schedule {
+    min-height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.openinghours-container li {
-    padding-bottom: 10px;
+.days, .time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.days {
+    margin-left: 20px;
+}
+
+.time {
+    margin-right: 20px;
 }
 
 .info-container h5 {
@@ -827,21 +839,17 @@ header {
     height: 130px;
 }
 
-.schedule {
+.schedule-infopage {
+    height: auto;
     display: flex;
     justify-content: space-around;
 }
-
-.days {
+.days-infopage {
     margin-left: 20px;
 }
 
-.time {
+.time-infopage {
     margin-right: 20px;
-}
-
-.days p:first-child, .time p:first-child {
-    margin-top: 0;
 }
 
 .accessibility-img {
