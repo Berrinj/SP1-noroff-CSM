@@ -1249,7 +1249,7 @@ https://www.youtube.com/watch?v=07MslbPos4U
             padding: 0 0 10px 0;
             
         }
-        .fleft p {
+        .fleft p, .fleft h4 {
             text-align: center;
             width: auto;
         }
