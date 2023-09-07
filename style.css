@@ -80,6 +80,9 @@ main h1 {
 .introduction {
     padding-bottom: 2%;
 }
+.introduction h1 {
+    font-size: 32px;
+}
 
 .index-intro {
     max-width: 600px;
@@ -744,7 +747,7 @@ header {
 
 .explore-page-container img {
     width: 100%;
-    min-width: 250px;
+    min-width: 200px;
     height: 285px;
     float: left;
     object-fit: cover;
@@ -989,9 +992,10 @@ textarea[name] {
 /* || 10. TICKETS.HTML */
 
 .ticket-p {
-    max-width: 1000px;
+    max-width: 800px;
+    text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .ticket-main {
@@ -1092,8 +1096,13 @@ input[type=date] {
     border-radius: 10px 0 0 10px;
 }
 
-.user-information {
-    padding: 0 20px 0 20px;
+.user-information p, .user-information fieldset {
+    margin: 0 20px 20px 20px;
+}
+
+.user-information fieldset {
+    max-width: 1000px;
+
 }
 
 /* 
@@ -1357,6 +1366,10 @@ https://www.youtube.com/watch?v=07MslbPos4U
 
         .enter-button {
             margin: auto;
+        }
+
+        .fleft img {
+            max-width: fit-content;
         }
     }
 
