@@ -977,6 +977,12 @@ textarea[name] {
     margin: 0;
 }
 
+.pal-con-1 h3, .pal-con-2 h3 {
+    position: absolute;
+    padding: 0 20px;
+    background-color: var(--bg-light-grey);
+}
+
 .pal-con-2 {
     flex-direction: row-reverse;
 }
