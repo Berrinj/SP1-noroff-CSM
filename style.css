@@ -82,7 +82,7 @@ main h1 {
     padding-bottom: 2%;
 }
 .introduction h1 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .index-intro {
@@ -90,7 +90,7 @@ main h1 {
     margin: auto;
     text-align: center;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .intro1  {
@@ -98,11 +98,11 @@ main h1 {
     margin: auto;
     text-align: center;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .section-headings {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -120,7 +120,7 @@ main h1 {
     color:#000;
     margin-bottom: 30px;
     margin-top: 25px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .backtotop:hover {
@@ -177,7 +177,7 @@ nav ul {
 nav li {
     display: flex;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     flex-wrap: wrap;
     list-style: none;
     gap: 10%;
@@ -247,8 +247,9 @@ label b {
     justify-content: center;
     width: 300px;
     order: 2;
-    font-size: 16px;
-    color: white;
+    gap: 3px;
+    font-size: 1rem;
+    color: var(--text-white);
     text-shadow: 1px 1px 2px #062315;
     margin-left: 20px;
     margin-right: 20px;
@@ -256,6 +257,7 @@ label b {
 
 .opening-hours p {
     padding-left: 0;
+    font-style: italic;
 }
 
 
@@ -291,12 +293,11 @@ footer {
 
 footer li {
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 footer p {
     margin-bottom: 5px;
-    font-size: 16px;
 }
       
 footer .fcenter img {
@@ -385,7 +386,7 @@ footer .socials img {
 /* || 2.2 Book tickets button, on most pages */
 .ticket-button {
     max-width: 300px;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-top: 0;
     padding: 20px;
     border-radius: 0 0 6px 6px;
@@ -396,7 +397,7 @@ footer .socials img {
 /* || 2.3 index.html: See all exhibitions button */
 .see-all-button {
     width: 250px;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 0px;
     border-radius: 6px;
     padding: 15px;
@@ -409,7 +410,6 @@ footer .socials img {
     font-weight: 600;
     color: aliceblue;
     text-align: center;
-    font-size: 16px;
     margin-top: 0;
     margin-left: auto; 
     margin-right: 0;
@@ -428,7 +428,6 @@ footer .socials img {
     font-weight: 600;
     color: aliceblue;
     text-align: center;
-    font-size: 16px;
     margin: auto;
     border-radius: 0 0 6px 6px;
     padding: 10px;
@@ -446,7 +445,7 @@ footer .socials img {
     background-color: var(--btn-bg-green);
     color: var(--text-white);
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 30px auto;
     border-radius: 6px;
     padding: 15px;
@@ -515,7 +514,7 @@ header {
     padding-bottom: 2%;
 }
 
-.exhibition-containers {
+.exhibition-containers, .explore-containers {
    max-width: 1101px;
    display: flex;
    justify-content: space-around;
@@ -525,8 +524,9 @@ header {
 }
 
 .exh-con img, .exp-con img {
-    width: 500px;
-    height: 294px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     vertical-align: middle;
     object-fit: cover;
     border-radius: 6px 6px 0 0;
@@ -539,15 +539,15 @@ header {
 .ex-label {
     background-color: var(--heading-bg-dark-blue-green);
     height: 50px;
-    color: white;
+    color: var(--text-white);
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 50px;
     margin-bottom: 20px;
     box-shadow: 0 8px 6px -6px grey;
 }
 
-.informational-containers {
+.index-informational-containers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -557,10 +557,10 @@ header {
     padding-left: 1%;
 }
 
-.informational-containers h4 {
+.index-informational-containers h4 {
     text-align: center;
     background-color: var(--heading-bg-dark-blue-green);
-    color: white;
+    color: var(--text-white);
     padding: 10px;
     margin: 0 0 10px 0;
     border-radius: 6px 6px 0 0;
@@ -602,22 +602,22 @@ header {
 }
 
 .date h5 {
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .date p {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 15px;
 }
 
 .about-event h5 {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 3px;
     font-weight: 600;
 }
 
 .about-event p {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .schedule {
@@ -644,36 +644,19 @@ header {
 .info-container h5 {
     margin: 0;
     padding: 0px 10px 0px 10px;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
 }
 
 .info-container p {
     padding: 2px 10px 10px 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin: 0;
     line-height: 25px;
 }
 
 .explore h3 {
     margin-top: 50px;
-}
-
-.explore-containers {
-    max-width: 1101px;
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-.explore-kids img, .explore-teachers img {
-    width: 500px;
-    height: 250px;
-    vertical-align: middle;
-    object-fit: cover;
-    border-radius: 6px 6px 0 0;
 }
 
 
@@ -691,7 +674,7 @@ header {
 .page-navigation p {
     margin: 0;
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .exhibitions-grid {
@@ -771,7 +754,7 @@ header {
 .explore-page-container h3 {
     padding-top: 10px;
     padding-left: 20px;
-    font-size: 1.7rem;
+    font-size: 1.625rem;
 }
 
 .explore-page-container p {
@@ -787,11 +770,12 @@ header {
 
 /* || 6. INFO.HTML */
 
-.info-containers {
+.all-info-containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+    padding: 0 10px 
  }
 
 .informational-container {
@@ -803,6 +787,10 @@ header {
     border-radius: 6px 6px 0 0;
 }
 
+.informational-container:last-child {
+    padding-bottom: 0;
+}
+
 .informational-container img {
     width: 300px;
     object-fit: cover;
@@ -811,7 +799,7 @@ header {
 .informational-container h3{
     background-color: var(--heading-bg-dark-blue-green);
     height: 38px;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--text-white);
     margin: 0;
     display: flex;
@@ -926,7 +914,7 @@ textarea[name] {
     max-width: 695px;
     border-radius: 7px;
     padding: 7px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
@@ -1090,7 +1078,7 @@ input[type=date] {
     background-color: #fff;
     height: 40px;
     width: auto;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
     padding: 0 10px;
@@ -1137,7 +1125,15 @@ https://www.youtube.com/watch?v=07MslbPos4U
         }
 
         .opening-hours {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        .opening-hours p {
+            display: flex;
+            margin: 0;
+            justify-content: center;
         }
 
         nav img {
@@ -1169,6 +1165,16 @@ https://www.youtube.com/watch?v=07MslbPos4U
             padding: 0;
             margin-left: 0;
         }
+
+        .opening-hours {
+            width: 85px;
+            font-size: 0.75rem;
+        }
+
+        nav a, .active {
+            font-size: 1rem;
+        }
+
         .introlongtext {
             display: flex;
             flex-direction: column;
@@ -1193,7 +1199,7 @@ https://www.youtube.com/watch?v=07MslbPos4U
             display: none;
         }
 
-        .informational-containers {
+        .index-informational-containers {
             justify-content: center;
             gap: 30px;
         }
@@ -1246,7 +1252,6 @@ https://www.youtube.com/watch?v=07MslbPos4U
             width: 100vw;
             background-color: var(--bg-nav-green-blue);
             text-align: center;
-            font-size: 16px;
         }
         .fleft img {
             width: 250px;
@@ -1276,12 +1281,12 @@ https://www.youtube.com/watch?v=07MslbPos4U
 
     }
 
-    @media screen and (max-width: 582px) {
+    @media screen and (max-width: 640px) {
 
         .ticket-button {
             width: 150px;
             padding: 10px;
-            font-size: 0.8rem;
+            font-size: 0.875rem;
             top: 80px;
         }
 
@@ -1294,17 +1299,8 @@ https://www.youtube.com/watch?v=07MslbPos4U
         }
 
         .opening-hours {
-            display: flex;
-            gap: 10px;
-            flex-direction: column;
-            align-items: center;
             margin-right: 45px;
             margin-left: 0;
-        }
-
-        .opening-hours p {
-            margin: 0;
-            font-size: 0.7rem;
         }
 
         header {
@@ -1314,19 +1310,12 @@ https://www.youtube.com/watch?v=07MslbPos4U
         nav ul {
             display: none;
         }
-       
-        .exh-con img {
-            max-width: 300px;
-            height: 200px;
+    
+        .intro3 {
+            display: none;
         }
-
-        .explore-kids img, .explore-teachers img {
-            width: 300px;
-            height: 200px;
-        }
-      
         .exhibitions-grid h2 {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
 
         .number-type {
@@ -1351,18 +1340,21 @@ https://www.youtube.com/watch?v=07MslbPos4U
             display: none;
         }
 
-        img.smallest-screen {
-            width: 200px;
-            height: 100px;
-            object-fit: cover;
-        }
-
         .see-all-button, .reserve-button {
             width: 150px;
         }
 
+       .informational-container, .informational-container img {
+            min-width: 250px;
+            max-width: 250px;
+        }
+
+        .informational-container iframe {
+            max-width: 248px;
+        }
+
         .schedule p{
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         .time, .days {
             margin-right: 10px;
