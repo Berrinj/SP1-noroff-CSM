@@ -23,7 +23,7 @@
     --bg-nav-green-blue: #1F5F5B;
     --heading-bg-dark-blue-green: #06373A;
     --bg-light-grey: #F0ECEC;
-    --hover-link: #159947;
+    --hover-link: #63FF9F;
 }
 
 body {
@@ -124,7 +124,9 @@ main h1 {
 }
 
 .backtotop:hover {
-    color: var(--hover-link);  
+    color: var(--hover-link);
+    background-color: #062315;
+    border-radius: 6px;
 }
 
 
@@ -1353,10 +1355,6 @@ https://www.youtube.com/watch?v=07MslbPos4U
        .informational-container, .informational-container img {
             min-width: 250px;
             max-width: 250px;
-        }
-
-        .informational-container iframe {
-            max-width: 248px;
         }
 
         .schedule p{
