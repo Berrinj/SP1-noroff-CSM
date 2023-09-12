@@ -43,6 +43,7 @@
       </label>
       <div class="hamburger-menu">
         <ul>
+          <li><a href="tickets.html">Book Tickets</a></li>
           <li><a href="exhibitions.html">Exhibitions</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="info.html">Info</a></li>
@@ -62,20 +63,20 @@
           <h2 class="intro1">The entrance is free for all.</h2>
           <p class="ticket-p">There are guided tours of the museum that leave every hour. These tours are 70 NOK
             per person and include a handy printed guide of the museum.
-            If you would like to organise a guided tour for your group of 6 or more people, please contact us to
-            arrange the tour.
+            If you would like to organise a guided tour for your group of 6 or more people, <a href="contact.html">please contact us to
+            arrange the tour</a> or book and wait for us to get in touch.
           </p>
           <p class="ticket-p">Payment on arrival. Tickets can also be booked at the Museum.</p>
         </section>
         <div class="ticket-main">
-          <section class="choose-day">
-            <h3 class="section-headings" tabindex="0">1. Choose day</h3>
+          <section class="choose-day" tabindex="0">
+            <h3 class="section-headings">1. Choose day</h3>
             <label for="ticket-reserve">What day do you want to visit us?</label>
             <input type="date" id="ticket-reserve" name="choose-day" value="2023-09-01" min="2023-09-18"
               max="2023-12-31">
           </section>
-          <section class="choose-arrangement">
-            <h3 class="section-headings" tabindex="0">2. Choose ticket type</h3>
+          <section class="choose-arrangement" tabindex="0">
+            <h3 class="section-headings">2. Choose ticket type</h3>
             <p tabindex="0">Please choose one or more options below</p>
             <!-- MAKE ONE CHECKBOX REQUIRED BEFORE RESERVING TICKETS IN JAVASCRIPT-->
             <div class="ticket-type-checkbox">
@@ -96,8 +97,8 @@
             </div>
           </section>
           <!--  ADD JAVASCRIPT TO ADD AND SUBTRACT-->
-          <section class="choose-tickets">
-            <h3 class="section-headings" tabindex="0">3. Choose number of tickets</h3>
+          <section class="choose-tickets" tabindex="0">
+            <h3 class="section-headings">3. Choose number of tickets</h3>
             <div class="number-type">
               <div class="add-subtrackt-button">
                 <button class="minus">-</button>
@@ -123,10 +124,10 @@
               <p class="type" tabindex="0">Group (must be over 6 attendees)</p>
             </div>
           </section>
-          <section class="user-information">
-            <h3 class="section-headings" tabindex="0">4. Add info</h3>
+          <section class="user-information" tabindex="0">
+            <h3 class="section-headings">4. Add info</h3>
             <form action="index.html" method="GET">
-              <p tabindex="0">Tickets will be sent to your email.</p>
+              <p tabindex="0">Tickets will be sent to your email. Group reservations will hear from us on the provided email within 12 hours during Museum opening hours.</p>
               <fieldset>
                 <legend>Add your information</legend>
                 <label for="name">Name:*</label>

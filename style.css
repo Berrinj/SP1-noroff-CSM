@@ -24,6 +24,7 @@
     --heading-bg-dark-blue-green: #06373A;
     --bg-light-grey: #F0ECEC;
     --hover-link: #63FF9F;
+    --link-blue: #3366CC;
 }
 
 body {
@@ -766,7 +767,8 @@ header {
 }
 
 .explore-page-container a {
-    color: blue;
+    color: var(--link-blue);
+    font-weight: 600;
 }
 
 
@@ -952,6 +954,11 @@ textarea[name] {
     margin: 0;
 }
 
+.get-involved-main a {
+    color: var(--link-blue);
+    font-weight: 600;
+}
+
 
 /* || 9. PALEONTOLOGY.HTML */
 
@@ -1003,6 +1010,11 @@ textarea[name] {
     margin-top: 20px;
 }
 
+.ticket-p a {
+    color: var(--link-blue);
+    font-weight: 600;
+}
+
 .ticket-main {
     max-width: 1000px;
     min-height: 400px;
@@ -1038,6 +1050,9 @@ input[type=date] {
     margin-left: 20px;
 }
 
+.choose-arrangement {
+    max-width: 100%;
+}
 .choose-arrangement p {
     padding: 0 20px 0 20px;
     font-style: italic;
@@ -1101,15 +1116,21 @@ input[type=date] {
     border-radius: 10px 0 0 10px;
 }
 
-.user-information p, .user-information fieldset {
+.user-information {
+    max-width: 100%;
+}
+
+.user-information p {
     margin: 0 20px 20px 20px;
 }
 
 .user-information fieldset {
-    max-width: 1000px;
-
+    margin: 2%;
 }
 
+.user-information fieldset {
+    max-width: 100%;
+}
 /* 
 Button add or subtract inspo:
 https://www.youtube.com/watch?v=07MslbPos4U
@@ -1338,7 +1359,7 @@ https://www.youtube.com/watch?v=07MslbPos4U
     }
 
 
-    @media screen and (max-width: 328px) {
+    @media screen and (max-width: 338px) {
 
         header img {
             width: 250px;
@@ -1377,8 +1398,3 @@ https://www.youtube.com/watch?v=07MslbPos4U
             max-width: fit-content;
         }
     }
-
-/* Header img: Photo by Romain Tordo on Unsplash
-background opacity https://stackoverflow.com/
-CSS grids MDN
-*/
