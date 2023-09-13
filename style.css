@@ -536,7 +536,7 @@ header {
 }
 
 .exh-con:hover, .exp-con:hover {
-    opacity: 90%;
+    scale: 102%;
 }
 
 .ex-label {
