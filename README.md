@@ -1,7 +1,7 @@
 # Community Science Museum
 
-![image](https://onedrive.live.com/embed?resid=6948AB603E194695%2184687&authkey=%21ALHvj_fd8xWGFxI&height=660)
-- Noroff Semester project 1, fall 2023
+![image](https://onedrive.live.com/embed?resid=6948AB603E194695%2184687&authkey=%21ALHvj_fd8xWGFxI&height=660) <br>
+Noroff Semester project 1, fall 2023
 - [View the website live on Netlify](https://sp1-noroff-csm.netlify.app/)
 
 ## Description
