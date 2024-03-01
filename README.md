@@ -6,18 +6,8 @@ Noroff Semester project 1, September 2023 <br>
 
 ## Description
 
-Based on the first-semester curriculum, the semester project should reflect the student’s creative and technical knowledge and skills. This includes design principles, project management, communication technology, and development with HTML/CSS.
+"Based on the first-semester curriculum, the semester project should reflect the student’s creative and technical knowledge and skills. This includes design principles, project management, communication technology, and development with HTML/CSS."
 
-Requirements:
-- The site must have a design that appeals to the target audience.
-- The site must have at least 4-6 pages.
-- Compositional principles, typography, and colour schemes must be considered.
-- Your HTML should be semantic and neatly indented.
-- The site should use external CSS style sheets which follow the DRY principle.
-- The site should download quickly and not be overly “heavy”. Images should be at most 200kb.
-- The site should consider WCAG principles, especially regarding hierarchy, navigation, and colour usage.
-- The site should be responsive, attractive, and easy to use on various devices.
-- The site should show consideration for content strategy and SEO (consider your use of meta tags and alt text).
 
 ## Built With
 
