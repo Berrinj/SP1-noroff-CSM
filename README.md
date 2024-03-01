@@ -21,7 +21,7 @@ Noroff Semester project 1, September 2023 <br>
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:Berrinj/SP1-noroff-CSM.git
+git clone https://github.com/Berrinj/SP1-noroff-CSM.git
 ```
 
 ### Running
